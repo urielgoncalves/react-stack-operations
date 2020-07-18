@@ -1,7 +1,4 @@
-# react-stack-operations
-
-# Operations
 React app that represents stack's operations as Push and Peek.
 
-# Technologies:
+# Technologies
 React, Typescript
