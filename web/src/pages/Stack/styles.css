@@ -1,0 +1,43 @@
+#page-stack {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: auto;
+    width: 100%;
+}
+
+#page-stack #actions{
+    border:1px solid #CCC;
+    border-radius: 0.5em;
+    padding:5px
+}
+
+#page-stack #actions input, button{
+    margin:5px
+}
+
+#actions input[type="text"]{
+    width: 200px;
+    height: 25px;
+    border-radius: 0.5em;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #CCC;
+}
+
+#page-stack main ul{
+    display: flex;
+    flex-direction:column-reverse;
+    list-style:none
+}
+
+#page-stack main ul li{
+    border: 1px solid #CCC;
+    min-width: 100px;
+    height: 25px;
+    border-radius: 0.5em;
+    text-align: center;
+    line-height: 25px;
+    margin:5px
+}
