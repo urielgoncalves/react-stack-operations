@@ -57,11 +57,17 @@ const Stack = ()=>{
         }
     }
 
+    function handleIsEmptyButton(){
+        if (empty && empty === 'true') alert('Yes, Stack is empty');
+        else alert('No, Stack is not empty');
+    }
+
     function handlePeek(){
         if (!handleIsEmpty())
-            setElements(elements.slice(0, elements.length - 1));
+            //setElements(elements.slice(0, elements.length - 1));
+            setFormData({...formData, 'newElement':elements[elements.length - 1]});
         else
-            setAlertMessage('The stack is empty');
+            setAlertMessage('Operation not allowed');
     }
 
     return(
@@ -80,7 +86,7 @@ const Stack = ()=>{
                     ref={newElementRef} 
                     tabIndex={-1} />
                     <button type="button" id="btnPush" onClick={()=>handlePush()}>Push</button>
-                    <button type="button" id="btnEmpty" onClick={()=>handleIsEmpty()}>Empty</button>
+                    <button type="button" id="btnEmpty" onClick={()=>handleIsEmptyButton()}>Empty</button>
                     <button type="button" id="btnPeek" onClick={()=>handlePeek()}>Peek</button>
                 </div>
                 <ul>
